@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">ToDo List (PUM)</string>
+
+    <string name="search">Wyszukaj</string>
+    <string name="sort">Sortuj</string>
+    <string name="del">Usuń</string>
+    <string name="settings">Losuj kolor</string>
+    <string name="about">O aplikacji...</string>
+
+    <string name="del_all">Usuń wszystkie</string>
+    <string name="del_checked">Usuń tylko zaznaczone</string>
+
+    <string name="edit">Edytuj</string>
+    <string name="read">Odczytaj</string>
+    <string name="reorder">Reorganizuj</string>
+
+    <string name="reorderStop">Zakończ reorganizację</string>
+
+    <string name="put_top">Umieść element jako pierwszy</string>
+    <string name="put_bottom">Umieść element jako ostatni</string>
+
+    <string name="manage">Zarzadzaj</string>
+
+    <string name="stats">Wyświetl statystyki</string>
+    <string name="expand_all">Rozwiń wszystkie</string>
+    <string name="wrap_all">Zwiń wszystkie</string>
+
+    <!--Dodaj/Edytuj -->
+
+    <string name="add_edit_add">Dodaj zadanie</string>
+    <string name="add_edit_edit">Edytuj zadanie</string>
+    <string name="add_edit_title">Tytuł:</string>
+    <string name="add_edit_desc">Opis:</string>
+    <string name="add_edit_deadline">Termin:</string>
+    <string name="add_edit_time">Godzina:</string>
+    <string name="add_edit_prior">Priorytet:</string>
+    <string name="add_edit_cancel">Anuluj</string>
+    <string name="add_edit_apply">Zatwierdź</string>
+    <string name="add_edit_title_temp">Wprowadź tytuł zadania</string>
+    <string name="add_edit_desc_temp">Wprowadź opis zadania</string>
+    <string name="add_edit_deadline_button">KLIKNIJ ABY WPROWADZI TERMIN ZADANIA</string>
+    <string name="add_edit_time_button">KLIKNIJ ABY WPROWADZI GODZINĘ ZADANIA</string>
+
+    <!-- Priorytety -->
+
+    <string name="prior_A">A - zadanie o najwyższym priorytecie</string>
+    <string name="prior_B">B - zadanie o niskim priorytecie</string>
+    <string name="prior_C">C - zadanie opcjonalne</string>
+    <string name="prior_D">D - zadanie do oddelegowania</string>
+    <string name="prior_E">E - samorowzój</string>
+
+    <!-- Reszta -->
+
+    <string name="sort_settings">Opcje sortowania:</string>
+    <string name="sort_settings_wg">Sortuj według:</string>
+    <string name="sort_settings_typ">Typ sortowania:</string>
+
+
+</resources>

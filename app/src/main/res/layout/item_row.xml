@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    android:id="@+id/relativeLayout"
+    android:descendantFocusability="blocksDescendants">
+
+    <!--
+    android:background="#003366"
+    android:background="@color/colorAccent"
+    -->
+
+    <ImageView
+        android:id="@+id/imageView_prior"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/a_letter" />
+
+    <ImageView
+        android:id="@+id/imageView_arrow"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignStart="@+id/imageView_prior"
+        android:layout_below="@+id/imageView_prior"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@drawable/arrow_down" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/imageView_prior"
+        android:layout_marginEnd="10dp"
+        android:buttonTint="@android:color/white" />
+
+    <TextView
+        android:id="@+id/textView_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageView_prior"
+        android:textSize="20sp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="49dp"
+        android:layout_toEndOf="@+id/imageView_prior"
+        android:textColor="@android:color/white"
+        android:text="#Example header" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_inner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_header"
+        >
+
+    <TextView
+        android:id="@+id/textView_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="49dp"
+        android:layout_marginStart="49dp"
+        android:textSize="15sp"
+        android:textColor="@android:color/white"
+        android:text="With his Paladins keeping vigilant watch over the northlands, the Archbishop's assistant Uther Lightbringer of Lordaeron has come to offer comfort to those who are suffering the misfortunes of war. Lord Lothar has entrusted you with the protection of the Paladins' Commander and his entourage as they travel to the island township of Caer Darrow." />
+
+    <TextView
+        android:id="@+id/textView_date_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_desc"
+        android:layout_marginTop="10dp"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_below="@+id/textView_desc"
+        android:text="#Created" />
+
+    <TextView
+        android:id="@+id/textView_created"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView_date_created"
+        android:textColor="@android:color/white"
+        android:layout_marginEnd="5dp"
+        android:layout_toStartOf="@+id/textView_date_created"
+        android:text="Utworzony:" />
+
+    <TextView
+        android:id="@+id/textView_date_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_date_created"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/textView_date_created"
+        android:text="#Deadline" />
+
+    <TextView
+        android:id="@+id/textView_deadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textView_created"
+        android:layout_marginEnd="5dp"
+        android:textColor="@android:color/white"
+        android:layout_alignTop="@+id/textView_date_deadline"
+        android:text="Termin:" />
+
+    <TextView
+        android:id="@+id/textView_timeleft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Pozostały czas:"
+        android:layout_below="@+id/textView_deadline"
+        android:textColor="@android:color/white"
+        android:layout_alignStart="@+id/textView_desc" />
+
+    <TextView
+        android:id="@+id/textView_timeleft_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_timeleft"
+        android:textColor="@android:color/holo_orange_light"
+        android:layout_below="@+id/textView_timeleft"
+        android:text="#Time"
+        android:layout_marginTop="5dp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:layout_below="@+id/textView_timeleft_value"
+        android:progress="50"
+        android:progressTint="@android:color/holo_blue_light"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout_arrows"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout_inner"
+
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/imageView_moveup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="125dp"
+            app:srcCompat="@drawable/move_up" />
+
+        <ImageView
+            android:id="@+id/imageView_movedown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="125dp"
+            app:srcCompat="@drawable/move_down" />
+
+    </RelativeLayout>
+</RelativeLayout>

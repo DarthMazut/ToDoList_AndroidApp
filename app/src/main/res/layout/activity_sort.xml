@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:background="@color/colorAccent">
+
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="@string/sort_settings"
+        />
+
+    <TextView
+        android:id="@+id/textView_sortWG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView_title"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sort_settings_wg" />
+
+    <Spinner
+        android:id="@+id/spinnerWG"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_sortWG"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/textView_sortWG"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:foreground="@color/colorPrimary"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/textView_sortTYP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerWG"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/sort_settings_typ" />
+
+    <Spinner
+        android:id="@+id/spinnerTYP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView_sortWG"
+        android:layout_marginEnd="15dp"
+        android:layout_below="@+id/textView_sortTYP"
+        android:backgroundTint="@android:color/holo_blue_light"
+        android:foreground="@color/colorPrimary"
+        android:layout_marginTop="10dp" />
+
+    <Button
+        android:id="@+id/button_cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/spinnerTYP"
+        android:layout_marginBottom="12dp"
+        android:text="@string/add_edit_cancel" />
+
+    <Button
+        android:id="@+id/button_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/button_cancel"
+        android:layout_marginEnd="16dp"
+        android:text="@string/add_edit_apply" />
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@drawable/wiinom_small" />
+
+    <TextView
+        android:id="@+id/textView_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wydział Informatyki i Nauki o Materiałach"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:text="Wróć do aplikacji" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignStart="@+id/imageView"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_above="@+id/button">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            android:text="Aplikacja stworzona na przedmiot 'Programowanie urządzeń mobilnych' jako projekt zaliczeniowy.\n\tNiniejsza aplikacja stanowi elektroniczną wersję listy zadań (ang. todo list) i oferuje wiele funkcjonalności: m.in dodawanie i usuwanie zadań z listy, nadawanie im priorytetów, doawanie szczegółowych opisów oraz terminów, sortowanie zadań, odczyt treści zadań poprzez syntezator mowy, reorganizację zadań, wyświetlanie statystyk i wiele, wiele innych tu nie wymienionych.\nCiekawym rozwiązaniem jest zaimplementowanie w niniejszej aplikacji paska postępu, który pokazuje jak blisko jest termin wyznaczonego zadania. Aby go zobaczyć należy rozwinąć zadanie - znajduje się on na spodzie każdego zadania o ile nie zostało ona oznaczone jako wykonane.\n\tAplikacja stworzona w środowisku AndroidStudio w języku java (koszmar, nikomu nie polecam - IDE oznacze sobie te błędy które chce, kompiluje z błędami a potem aplikacja się wysypuje; 90% czasu poświęcoych aplikacji to debugowanie... jak bardzo złym językiem jest java nawet nie będę wspomiał. Dwadzieścia różnych sposobów zamiany na string a żaden nie działa, czego oczywiście AndroidStudio nie wyłapuje przed kompilacją.)\n\tAutor: Sebastian Kasperczyk 2017r."
+            />
+    </ScrollView>
+</RelativeLayout>
